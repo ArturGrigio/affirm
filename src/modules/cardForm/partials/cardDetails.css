@@ -1,0 +1,32 @@
+.cardDetails {
+}
+
+.cardDetails--input {
+  padding: 3% 2%;
+  border-radius: 5px;
+  border: 2px solid #dcdcdc;
+  margin: 0% 1%;
+  text-align: center;
+}
+
+/* ERRORS */
+.cardDetails--error {
+  color: red;
+  font-size: 10px;
+  min-height: 14px;
+  margin-bottom: 2%;
+}
+
+/* GRID */
+.c12 {
+  width: 91%;
+}
+
+.c6 {
+  width: 42%;
+}
+
+/* CENTER PLACEHOLDER */
+::-webkit-input-placeholder {
+  text-align: center;
+}
