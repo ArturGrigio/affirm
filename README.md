@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Affirm · Independent Coding Exercise, Front End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## DEMO LINK
 
-## Available Scripts
 
-In the project directory, you can run:
+## Overview
+
+Congratulations on moving on to the next phase of your interview with Affirm. In
+this challenge, you will design and build a form that allows users to submit credit
+card information using the modern front-end tools of your choice. We suggest a
+time box of about 3 hours for this project.
 
 ### `yarn start`
 
