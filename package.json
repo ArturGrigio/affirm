@@ -1,5 +1,6 @@
 {
   "name": "affirm",
+  "description": "Artur Grigio implementation of the Affirm challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
