@@ -32,7 +32,7 @@ describe('AmexValidation', () => {
   })
 
   describe('Validates Card Number', () => {
-    const error = "Please enter correct card number."
+    const error = "Please enter a correct card number."
 
     test('empty', () => {
       expect(validation.validateCardNumber()).toEqual(null)

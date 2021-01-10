@@ -14,7 +14,7 @@ export class AmexValidation extends BaseValidation {
       return null;
     }
 
-    return "Please enter correct card number.";
+    return "Please enter a correct card number.";
   }
 
   public validateCcv2 = (number?: number) => {
