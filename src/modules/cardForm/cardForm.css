@@ -36,6 +36,10 @@
   color: white;
 }
 
+.cardForm--submit--button:disabled {
+  background: #9bb1ff;
+}
+
 /* SPINNER */
 .loader {
   border: 4px solid #f3f3f3; /* Light grey */
