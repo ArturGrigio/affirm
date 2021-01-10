@@ -6,10 +6,12 @@ import './cardDetails.css'
 
 export interface ICardDetails {
   formState: IFormState;
+  setHasErrors: (hasErrors: boolean) => void;
   updateFormState: (formState: IFormState) => void;
 }
 export const CardDetails = ({
   formState,
+  setHasErrors,
   updateFormState,
 }: ICardDetails) => {
   const [errors, setErrors] = useDebounce<IError>({ 
@@ -18,11 +20,25 @@ export const CardDetails = ({
     ccv2: null,
     expM: null,
     expY: null
-  }, 750)
+  }, 550)
   const validate = ValidationSingleton.getInstance();
 
   useEffect(() => {
-    setErrors(validate.validateAll(formState))
+    const validatedErrors = validate.validateAll(formState)
+    setErrors(validatedErrors)
+
+    if (
+      formState.name
+      && formState.cardNumber
+      && formState.ccv2
+      && formState.expM
+      && formState.expY
+      && Object.values(validatedErrors).every((val: string | null) => val === null)
+    ) {
+      setHasErrors(false)
+    } else {
+      setHasErrors(true)
+    }
   }, [formState])
 
   const updateValue = (event: React.FormEvent) => {
